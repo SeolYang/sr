@@ -30,7 +30,6 @@
 #include <glm/glm.hpp>
 #include <stb_image/stb_image.h>
 #include <stb_image/stb_image_write.h>
-#include <tinygltf/tiny_gltf.h>
 
 #pragma  warning(pop)
 

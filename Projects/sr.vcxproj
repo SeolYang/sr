@@ -70,7 +70,7 @@
       <PreprocessorDefinitions>DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Sources;$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes;$(SolutionDir)..\Thirdparty\tinygltf\includes</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Sources;$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsWinRT>
       </CompileAsWinRT>
@@ -98,7 +98,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Sources;$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes;$(SolutionDir)..\Thirdparty\tinygltf\includes</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Sources;$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsWinRT>
       </CompileAsWinRT>
@@ -120,7 +120,6 @@
   <ItemGroup>
     <ClInclude Include="..\Sources\Core\CoreMinimal.h" />
     <ClInclude Include="..\Sources\Core\DepthStencilBuffer.h" />
-    <ClInclude Include="..\Sources\Core\Mesh.h" />
     <ClInclude Include="..\Sources\Core\Pipeline.h" />
     <ClInclude Include="..\Sources\Core\PixelShader.h" />
     <ClInclude Include="..\Sources\Core\RenderBuffer.h" />
@@ -466,7 +465,6 @@
     <ClInclude Include="..\Thirdparty\json\includes\json\json.hpp" />
     <ClInclude Include="..\Thirdparty\stb_image\includes\stb_image\stb_image.h" />
     <ClInclude Include="..\Thirdparty\stb_image\includes\stb_image\stb_image_write.h" />
-    <ClInclude Include="..\Thirdparty\tinygltf\includes\tinygltf\tiny_gltf.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Thirdparty\glm\includes\glm\detail\func_common.inl" />

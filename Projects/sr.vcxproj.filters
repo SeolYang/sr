@@ -19,9 +19,6 @@
     <Filter Include="Sources\Thirdparty\json">
       <UniqueIdentifier>{b661e713-1cdf-427d-b237-1af574a6ebae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Sources\Thirdparty\tinygltf">
-      <UniqueIdentifier>{b03a6c58-6dda-44a8-bce9-c231c1413b2e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Sources\Thirdparty\stb_image">
       <UniqueIdentifier>{2bc25f18-d529-4d13-805a-725b61f3bcb3}</UniqueIdentifier>
     </Filter>
@@ -1037,12 +1034,6 @@
     </ClInclude>
     <ClInclude Include="..\Thirdparty\stb_image\includes\stb_image\stb_image_write.h">
       <Filter>Sources\Thirdparty\stb_image</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Thirdparty\tinygltf\includes\tinygltf\tiny_gltf.h">
-      <Filter>Sources\Thirdparty\tinygltf</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Sources\Core\Mesh.h">
-      <Filter>Sources\Core</Filter>
     </ClInclude>
     <ClInclude Include="..\Sources\Core\Pipeline.h">
       <Filter>Sources\Core</Filter>
