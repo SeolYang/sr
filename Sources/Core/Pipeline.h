@@ -22,14 +22,15 @@ namespace sr
 
       void SetViewport(Viewport* vp) { m_viewport = vp; }
 
-      void Draw(Mesh* mesh);
+      void Draw(const std::optional<Mesh*>& mesh);
 
    protected:
-      void ExecuteRasterizer();
+      void Rasterization();
 
    private:
       VertexShader* m_vertexShader = nullptr;
       PixelShader* m_pixelShader = nullptr;
+      DepthStencilBuffer* m_depthStencilBuffer = nullptr;
       Viewport* m_viewport = nullptr;
 
    };

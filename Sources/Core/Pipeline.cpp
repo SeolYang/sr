@@ -8,4 +8,11 @@ namespace sr
       m_pixelShader = nullptr;
       m_viewport = nullptr;
    }
+
+   void Pipeline::Draw(const std::optional<Mesh*>& mesh)
+   {
+      if (mesh)
+      {
+      }
+   }
 }
