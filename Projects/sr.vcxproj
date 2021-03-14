@@ -70,7 +70,7 @@
       <PreprocessorDefinitions>DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Sources;$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Sources;$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes;$(SolutionDir)..\Thirdparty\assimp\includes</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsWinRT>
       </CompileAsWinRT>
@@ -104,7 +104,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Sources;$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Sources;$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes;$(SolutionDir)..\Thirdparty\assimp\includes</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsWinRT>
       </CompileAsWinRT>
@@ -132,15 +132,94 @@
   <ItemGroup>
     <ClInclude Include="..\Sources\Core\CoreMinimal.h" />
     <ClInclude Include="..\Sources\Core\DepthStencilBuffer.h" />
+    <ClInclude Include="..\Sources\Core\Mesh.h" />
     <ClInclude Include="..\Sources\Core\Pipeline.h" />
     <ClInclude Include="..\Sources\Core\PixelShader.h" />
     <ClInclude Include="..\Sources\Core\RenderBuffer.h" />
     <ClInclude Include="..\Sources\Core\Sampler.h" />
+    <ClInclude Include="..\Sources\Core\ShaderCommon.h" />
     <ClInclude Include="..\Sources\Core\Texture.h" />
     <ClInclude Include="..\Sources\Core\Triangle.h" />
     <ClInclude Include="..\Sources\Core\Vertex.h" />
     <ClInclude Include="..\Sources\Core\VertexShader.h" />
     <ClInclude Include="..\Sources\Core\Viewport.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\aabb.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\ai_assert.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\anim.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\BaseImporter.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Bitmap.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\BlobIOSystem.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\ByteSwapper.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\camera.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\cexport.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\cfileio.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\cimport.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\color4.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Compiler\poppack1.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Compiler\pstdint.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\config.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\CreateAnimMesh.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\DefaultIOStream.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\DefaultIOSystem.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\DefaultLogger.hpp" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Defines.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\defs.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Exceptional.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Exporter.hpp" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\fast_atof.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\GenericProperty.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Hash.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Importer.hpp" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\importerdesc.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\IOStream.hpp" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\IOStreamBuffer.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\IOSystem.hpp" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\irrXMLWrapper.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\light.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\LineSplitter.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\LogAux.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Logger.hpp" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\LogStream.hpp" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Macros.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\material.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\MathFunctions.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\matrix3x3.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\matrix4x4.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\MemoryIOWrapper.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\mesh.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\metadata.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\NullLogger.hpp" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\ParsingUtils.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\pbrmaterial.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\port\AndroidJNI\AndroidJNIIOSystem.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\postprocess.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Profiler.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\ProgressHandler.hpp" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\qnan.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\quaternion.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\RemoveComments.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\scene.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\SceneCombiner.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\SGSpatialSort.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\SkeletonMeshBuilder.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\SmoothingGroups.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\SpatialSort.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\StandardShapes.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\StreamReader.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\StreamWriter.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\StringComparison.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\StringUtils.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Subdivision.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\texture.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\TinyFormatter.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\types.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\vector2.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\vector3.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\version.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\Vertex.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\XMLTools.h" />
+    <ClInclude Include="..\Thirdparty\assimp\includes\assimp\ZipArchiveIOSystem.h" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\benchmark_session.hpp" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\compare.hpp" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\composition.hpp" />
@@ -479,6 +558,14 @@
     <ClInclude Include="..\Thirdparty\stb_image\includes\stb_image\stb_image_write.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Thirdparty\assimp\includes\assimp\color4.inl" />
+    <None Include="..\Thirdparty\assimp\includes\assimp\material.inl" />
+    <None Include="..\Thirdparty\assimp\includes\assimp\matrix3x3.inl" />
+    <None Include="..\Thirdparty\assimp\includes\assimp\matrix4x4.inl" />
+    <None Include="..\Thirdparty\assimp\includes\assimp\quaternion.inl" />
+    <None Include="..\Thirdparty\assimp\includes\assimp\SmoothingGroups.inl" />
+    <None Include="..\Thirdparty\assimp\includes\assimp\vector2.inl" />
+    <None Include="..\Thirdparty\assimp\includes\assimp\vector3.inl" />
     <None Include="..\Thirdparty\glm\includes\glm\detail\func_common.inl" />
     <None Include="..\Thirdparty\glm\includes\glm\detail\func_common_simd.inl" />
     <None Include="..\Thirdparty\glm\includes\glm\detail\func_exponential.inl" />
