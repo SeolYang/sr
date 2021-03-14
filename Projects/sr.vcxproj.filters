@@ -25,6 +25,9 @@
     <Filter Include="Sources\Thirdparty\stb_image">
       <UniqueIdentifier>{2bc25f18-d529-4d13-805a-725b61f3bcb3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sources\Core">
+      <UniqueIdentifier>{a2b12dce-e21f-4c1b-9c1a-54f677932c57}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Thirdparty\glm\includes\glm\common.hpp">
@@ -1037,6 +1040,33 @@
     </ClInclude>
     <ClInclude Include="..\Thirdparty\tinygltf\includes\tinygltf\tiny_gltf.h">
       <Filter>Sources\Thirdparty\tinygltf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\Core\CoreMinimal.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\Core\DepthStencilBuffer.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\Core\Mesh.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\Core\Pipeline.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\Core\RenderBuffer.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\Core\Texture.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\Core\Vertex.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\Core\VertexShader.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\PixelShader.h">
+      <Filter>Sources\Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

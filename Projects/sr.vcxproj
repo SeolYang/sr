@@ -22,7 +22,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
     <VCToolsVersion>
     </VCToolsVersion>
   </PropertyGroup>
@@ -31,7 +31,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
     <VCToolsVersion>
     </VCToolsVersion>
   </PropertyGroup>
@@ -70,7 +70,7 @@
       <PreprocessorDefinitions>DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes;$(SolutionDir)..\Thirdparty\tinygltf\includes</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Sources;$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes;$(SolutionDir)..\Thirdparty\tinygltf\includes</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsWinRT>
       </CompileAsWinRT>
@@ -79,7 +79,7 @@
       <OpenMPSupport>true</OpenMPSupport>
       <DisableLanguageExtensions>false</DisableLanguageExtensions>
       <EnableModules>false</EnableModules>
-      <FloatingPointModel />
+      <FloatingPointModel>Precise</FloatingPointModel>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <AdditionalModuleDependencies>
       </AdditionalModuleDependencies>
@@ -98,7 +98,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes;$(SolutionDir)..\Thirdparty\tinygltf\includes</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Sources;$(SolutionDir)..\Thirdparty\FunctionalPlus\includes;$(SolutionDir)..\Thirdparty\glm\includes;$(SolutionDir)..\Thirdparty\icecream\includes;$(SolutionDir)..\Thirdparty\json\includes;$(SolutionDir)..\Thirdparty\stb_image\includes;$(SolutionDir)..\Thirdparty\tinygltf\includes</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsWinRT>
       </CompileAsWinRT>
@@ -107,7 +107,7 @@
       <OpenMPSupport>true</OpenMPSupport>
       <DisableLanguageExtensions>false</DisableLanguageExtensions>
       <EnableModules>false</EnableModules>
-      <FloatingPointModel />
+      <FloatingPointModel>Precise</FloatingPointModel>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
@@ -118,6 +118,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Sources\Core\CoreMinimal.h" />
+    <ClInclude Include="..\Sources\Core\DepthStencilBuffer.h" />
+    <ClInclude Include="..\Sources\Core\Mesh.h" />
+    <ClInclude Include="..\Sources\Core\Pipeline.h" />
+    <ClInclude Include="..\Sources\Core\RenderBuffer.h" />
+    <ClInclude Include="..\Sources\Core\Texture.h" />
+    <ClInclude Include="..\Sources\Core\Vertex.h" />
+    <ClInclude Include="..\Sources\Core\VertexShader.h" />
+    <ClInclude Include="..\Sources\PixelShader.h" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\benchmark_session.hpp" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\compare.hpp" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\composition.hpp" />
