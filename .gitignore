@@ -30,3 +30,16 @@
 *.exe
 *.out
 *.app
+*.db-wal
+*.opendb
+*.db-shm
+*.db
+*.log
+*.recipe
+Builds/Intermediate/x64/Debug/sr.vcxproj.FileListAbsolute.txt
+*.ipch
+Projects/.vs/sr/v16/.suo
+*.tlog
+*.pdb
+*.idb
+*.ilk
