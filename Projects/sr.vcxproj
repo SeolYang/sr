@@ -127,6 +127,8 @@
     <ClInclude Include="..\Sources\Core\Vertex.h" />
     <ClInclude Include="..\Sources\Core\VertexShader.h" />
     <ClInclude Include="..\Sources\PixelShader.h" />
+    <ClInclude Include="..\Sources\Sampler.h" />
+    <ClInclude Include="..\Sources\Viewport.h" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\benchmark_session.hpp" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\compare.hpp" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\composition.hpp" />
