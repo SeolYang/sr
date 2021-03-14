@@ -1041,19 +1041,19 @@
     <ClInclude Include="..\Thirdparty\tinygltf\includes\tinygltf\tiny_gltf.h">
       <Filter>Sources\Thirdparty\tinygltf</Filter>
     </ClInclude>
-    <ClInclude Include="..\Sources\Core\CoreMinimal.h">
-      <Filter>Sources\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Sources\Core\DepthStencilBuffer.h">
-      <Filter>Sources\Core</Filter>
-    </ClInclude>
     <ClInclude Include="..\Sources\Core\Mesh.h">
       <Filter>Sources\Core</Filter>
     </ClInclude>
     <ClInclude Include="..\Sources\Core\Pipeline.h">
       <Filter>Sources\Core</Filter>
     </ClInclude>
+    <ClInclude Include="..\Sources\Core\PixelShader.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
     <ClInclude Include="..\Sources\Core\RenderBuffer.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\Core\Sampler.h">
       <Filter>Sources\Core</Filter>
     </ClInclude>
     <ClInclude Include="..\Sources\Core\Texture.h">
@@ -1065,13 +1065,16 @@
     <ClInclude Include="..\Sources\Core\VertexShader.h">
       <Filter>Sources\Core</Filter>
     </ClInclude>
-    <ClInclude Include="..\Sources\PixelShader.h">
+    <ClInclude Include="..\Sources\Core\Viewport.h">
       <Filter>Sources\Core</Filter>
     </ClInclude>
-    <ClInclude Include="..\Sources\Sampler.h">
+    <ClInclude Include="..\Sources\Core\CoreMinimal.h">
       <Filter>Sources\Core</Filter>
     </ClInclude>
-    <ClInclude Include="..\Sources\Viewport.h">
+    <ClInclude Include="..\Sources\Core\DepthStencilBuffer.h">
+      <Filter>Sources\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\Core\Triangle.h">
       <Filter>Sources\Core</Filter>
     </ClInclude>
   </ItemGroup>
@@ -1497,6 +1500,9 @@
     </ClCompile>
     <ClCompile Include="..\Sources\main.cpp">
       <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Core\Pipeline.cpp">
+      <Filter>Sources\Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

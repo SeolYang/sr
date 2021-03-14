@@ -122,13 +122,14 @@
     <ClInclude Include="..\Sources\Core\DepthStencilBuffer.h" />
     <ClInclude Include="..\Sources\Core\Mesh.h" />
     <ClInclude Include="..\Sources\Core\Pipeline.h" />
+    <ClInclude Include="..\Sources\Core\PixelShader.h" />
     <ClInclude Include="..\Sources\Core\RenderBuffer.h" />
+    <ClInclude Include="..\Sources\Core\Sampler.h" />
     <ClInclude Include="..\Sources\Core\Texture.h" />
+    <ClInclude Include="..\Sources\Core\Triangle.h" />
     <ClInclude Include="..\Sources\Core\Vertex.h" />
     <ClInclude Include="..\Sources\Core\VertexShader.h" />
-    <ClInclude Include="..\Sources\PixelShader.h" />
-    <ClInclude Include="..\Sources\Sampler.h" />
-    <ClInclude Include="..\Sources\Viewport.h" />
+    <ClInclude Include="..\Sources\Core\Viewport.h" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\benchmark_session.hpp" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\compare.hpp" />
     <ClInclude Include="..\Thirdparty\FunctionalPlus\includes\fplus\composition.hpp" />
@@ -608,6 +609,7 @@
     <None Include="..\Thirdparty\glm\includes\glm\gtx\wrap.inl" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Sources\Core\Pipeline.cpp" />
     <ClCompile Include="..\Sources\main.cpp" />
     <ClCompile Include="..\Thirdparty\glm\includes\glm\detail\glm.cpp" />
   </ItemGroup>
